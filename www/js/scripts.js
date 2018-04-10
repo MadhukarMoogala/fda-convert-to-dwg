@@ -623,6 +623,11 @@ function prepareFilesTree() {
        // $("#downloadExport").attr('disabled', 'disabled');
 
         if (data.node.type == 'items') {
+            //cleanup forgeFileOptions div
+            var msg = document.getElementById("forgeFileOptions").innerHTML;
+            if(msg){
+                document.getElementById("forgeFileOptions").innerHTML = "";
+            }
 
             MyVars.filename = data.node.original.text;
             //https://stackoverflow.com/questions/190852/how-can-i-get-file-extensions-with-javascript/12900504#12900504

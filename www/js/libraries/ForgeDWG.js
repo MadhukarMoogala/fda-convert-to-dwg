@@ -18,6 +18,11 @@
 
 if (!window.jQuery) alert('jQuery is required for this sample');
 
+var ToSpin = {
+  start : true,
+  stop : false
+}
+var spinner;
 var ForgeDWG = {
   Utility: {
     Constants: {
@@ -44,7 +49,7 @@ var ForgeDWG = {
     }).done(function (data) {
       var res = data;
       if (res.success) {
-
+        spin(ToSpin.start);
         $.ajax({
           url: '/da/getWorkItemStatus',
           type: 'GET',
@@ -52,6 +57,7 @@ var ForgeDWG = {
 
         }).done(function (res) {
           if (res.success) {
+            spin(ToSpin.stop);
             displayReport(res.reportPDF);
           }
 
@@ -67,14 +73,39 @@ var ForgeDWG = {
 
 };
 function displayReport(report) {
-  var msg = "";
+  var msg = "";  
   if (report) {
       msg += "<a href=";
       msg += report;
       msg += ">";
-      msg += "View Drawing";
+      msg += "Download Drawing";
       msg += "</a>";
   }
   document.getElementById("forgeFileOptions").innerHTML = "<br/>" + msg;
+}
+
+function spin(torf)
+{
+ 
+  if(torf === ToSpin.stop && spinner != undefined)
+  {
+   spinner.stop();
+    
+  }
+  else //define spinner
+  {
+  var opts = {
+    lines: 12, // The number of lines to draw
+    length: 5, // The length of each line
+    width: 5, // The line thickness
+    radius: 7, // The radius of the inner circle
+    color: '#000', // #rbg or #rrggbb
+    speed: 1, // Rounds per second
+    trail: 100, // Afterglow percentage
+    shadow: true // Whether to render a shadow
+  };
+  var target = document.getElementById('forgeFileOptions');
+  spinner = new Spinner(opts).spin(target);
+}
 }
 
