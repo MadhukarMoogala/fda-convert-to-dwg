@@ -9,17 +9,18 @@
 [![OSS](https://img.shields.io/badge/OSS-v2-green.svg)](http://developer.autodesk.com/)
 [![Model-Derivative](https://img.shields.io/badge/Model%20Derivative-v2-green.svg)](http://developer.autodesk.com/)
 [![Viewer](https://img.shields.io/badge/Viewer-v3.3-green.svg)](http://developer.autodesk.com/)
+[![Design-Automation](https://img.shields.io/badge/DesignAutomation-v2-brightgreen.svg)](https://developer.autodesk.com/en/docs/design-automation/v2/overview/)
 
 # Description
 
 This sample shows how you can use the **Model Derivative API** and what you can do with it and also uses [Autodesk Viewer](https://developer.autodesk.com/en/docs/viewer/v2/overview/) for showing models. The front-end will look like:
 
 ### Thumbnail
-![thumbnail](www/img/indexpage.png)
+![thumbnail](https://images2.imgbox.com/28/0a/kj8fIAgG_o.gif)
 
 ## Live version
 
-See it live at [https://derivatives.autodesk.io](https://derivatives.autodesk.io) 
+See it live at [https://converttodwg.herokuapp.com](https://converttodwg.herokuapp.com) 
 
 ## Setup
 
@@ -32,7 +33,7 @@ Install [NodeJS](https://nodejs.org).
 
 Clone this project or download it. It's recommended to install [GitHub desktop](https://desktop.github.com/). To clone it via command line, use the following (<b>Terminal</b> on MacOSX/Linux, <b>Git Shell</b> on Windows):
 
-    git clone https://github.com/autodesk-forge/model.derivative-nodejs-sample
+    git clone https://github.com/MadhukarMoogala/fda-convert-to-dwg
 
 To run it, install the required packages, set the enviroment variables with your client ID & secret and finally start it. Via command line, navigate to the folder where this repository was cloned and use the following:
 
