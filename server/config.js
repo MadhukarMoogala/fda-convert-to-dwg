@@ -28,8 +28,8 @@ module.exports = {
   callbackURL: process.env.FORGE_CALLBACK_URL || 'http://localhost:3000/api/forge/callback/oauth',
   // set enviroment variables or hard-code here
   credentials: {
-    client_id: process.env.FORGE_CLIENT_ID || 'rIbMvZGfBAtgGsIAxmomjLhNIL6gG4l4',
-    client_secret: process.env.FORGE_CLIENT_SECRET || 'b6vXVZI15rh0zadO'
+    client_id: process.env.FORGE_CLIENT_ID || '',
+    client_secret: process.env.FORGE_CLIENT_SECRET || ''
   },
   // Required scopes for your application on server-side
   scopeInternal: ['data:create','data:write','data:read','bucket:read','bucket:update','bucket:create','code:all'],
