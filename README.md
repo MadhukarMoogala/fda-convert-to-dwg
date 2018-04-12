@@ -13,7 +13,7 @@
 
 # Description
 
-This sample shows how you can use the **Model Derivative API** and what you can do with it and also uses [Autodesk Viewer](https://developer.autodesk.com/en/docs/viewer/v2/overview/) for showing models. The front-end will look like:
+This sample shows how you can use the **Design Automation API** and what you can do with it and also uses [Autodesk Viewer, Data Management & Model Derivative](https://developer.autodesk.com/en/docs/viewer/v2/overview/) for showing models. The front-end will look like:
 
 ### Thumbnail
 ![thumbnail](https://images2.imgbox.com/28/0a/kj8fIAgG_o.gif)
