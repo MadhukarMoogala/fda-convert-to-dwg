@@ -22,8 +22,8 @@ var app = require('./server/server');
 
 // start server
 var server = app.listen(app.get('port'), function () {
-var FORGE_CLIENT_ID = process.env.FORGE_CLIENT_ID || "rIbMvZGfBAtgGsIAxmomjLhNIL6gG4l4";
-var FORGE_CLIENT_SECRET = process.env.FORGE_CLIENT_SECRET || "b6vXVZI15rh0zadO";
+var FORGE_CLIENT_ID = process.env.FORGE_CLIENT_ID || "";
+var FORGE_CLIENT_SECRET = process.env.FORGE_CLIENT_SECRET || "";
 
   if (FORGE_CLIENT_ID == null || FORGE_CLIENT_SECRET == null)
     console.log('*****************\nWARNING: Client ID & Client Secret not defined as \n*****************');
